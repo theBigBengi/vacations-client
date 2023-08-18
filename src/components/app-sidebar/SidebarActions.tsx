@@ -101,7 +101,11 @@ const SidebarActions: React.FC<SidebarActionsProps> = () => {
       />
 
       {/* In progress checkbox */}
-      <Checkbox label='All vacations' onChange={handleAllCheckboxChange} />
+      <Checkbox
+        checked
+        label='All vacations'
+        onChange={handleAllCheckboxChange}
+      />
 
       {/* Selects container */}
       <div className={styles["selects"]}>

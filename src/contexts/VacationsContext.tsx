@@ -22,8 +22,8 @@ interface Vacation {
 
 interface Query {
   following: boolean;
-  startingDate: string;
-  endingDate: string;
+  startingDate: string | undefined;
+  endingDate: string | undefined;
   page: number;
   limit: number;
   sort: string;
@@ -66,8 +66,8 @@ export function VacationsProvider({ children }: { children: React.ReactNode }) {
   const [error, setError] = useState<string | null>(null);
   const [query, setQuery] = useState<Query>({
     following: false,
-    startingDate: `gt${new Date().toISOString()}`,
-    endingDate: `gt${new Date().toISOString()}`,
+    startingDate: undefined,
+    endingDate: undefined,
     page: 1,
     limit: 10,
     sort: "startingDate",
