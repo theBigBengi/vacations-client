@@ -1,0 +1,79 @@
+.homepage {
+  height: calc(100vh - 5rem);
+  margin: 2.5rem;
+  background-image: linear-gradient(#ff8f7bee 30%, #f0735d);
+  /* url("../../public/bg.jpg"); */
+  background-size: cover;
+  background-position: center;
+  padding: 2.5rem 5rem;
+}
+
+.homepage section {
+  display: flex;
+  flex-direction: column;
+  height: 85%;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  text-align: center;
+  padding: 0 16%;
+}
+
+.homepage h1 {
+  font-size: 4.5rem;
+  line-height: 1.3;
+  font-weight: 700;
+}
+
+.homepage h1 span {
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.homepage h2 {
+  width: 90%;
+  font-size: 1.6rem;
+  margin-bottom: 2.5rem;
+  font-weight: 400;
+  color: var(--color-dark--2);
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 1.5rem;
+}
+
+.actions a {
+  min-width: 270px;
+  box-shadow: 0 1px 5px 2px rgb(0, 0, 0, 0.3);
+}
+
+.actions a:hover {
+  transform: scale(1.01);
+}
+
+.actions a:active,
+.logout:active {
+  transform: scale(0.99);
+}
+
+.actions a:first-child {
+  border: none;
+  background-color: var(--color-brand--2);
+}
+
+.logout {
+  position: absolute;
+  right: 6.5rem;
+  top: 6rem;
+  width: 5%;
+  height: 4%;
+  background-color: transparent;
+  border: 1px solid var(--color-dark--0);
+  border-radius: 15px;
+  box-shadow: 0 1px 5px 2px rgb(0, 0, 0, 0.3);
+  cursor: pointer;
+}

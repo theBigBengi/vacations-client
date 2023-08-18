@@ -1,0 +1,10 @@
+.select {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.select select {
+  /* color: blue; */
+  /* font-weight: 900; */
+}

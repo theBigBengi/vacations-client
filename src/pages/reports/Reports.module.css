@@ -1,0 +1,18 @@
+.reports {
+  height: 100%;
+}
+
+.reports section {
+  padding: 3.2rem 10%;
+  gap: 4rem;
+  overflow-y: scroll;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.reports a {
+  align-self: flex-end;
+}

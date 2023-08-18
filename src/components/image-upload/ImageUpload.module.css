@@ -1,0 +1,33 @@
+.dropDiv {
+  width: 100%;
+  border: 2px dashed var(--color-dark--0);
+  background-color: transparent;
+  height: auto;
+  /* background-image: url("/Upload-Icon-Logo.png"); */
+  background-position: center;
+  background-size: 100px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  border-radius: 5px;
+  min-height: 100px;
+  position: relative;
+}
+
+.dropDiv img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  border: 2px dashed var(--color-dark--0);
+}
+
+.dropDiv button {
+  z-index: 1;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  text-transform: capitalize;
+}
+
+.dropDiv input {
+  display: none;
+}

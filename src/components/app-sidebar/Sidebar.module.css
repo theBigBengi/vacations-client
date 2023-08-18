@@ -1,0 +1,110 @@
+.sidebar {
+  flex-basis: 36rem;
+  padding: 2.5rem 4rem;
+  height: calc(100vh - 4.8rem);
+  font-size: 1.3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  border-right: 10px solid rgb(240, 240, 240);
+  row-gap: 1.5rem;
+}
+
+.sidebar a:first-child {
+  align-self: center;
+}
+
+.sidebar input:focus {
+  background-color: #effbff;
+  border: 1px solid #85dffb;
+}
+
+.sidebar ul {
+  margin-top: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.sidebar li {
+  list-style: none;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.sidebar li a {
+  text-decoration: none;
+}
+
+.sidebar svg {
+  height: 17px;
+  width: 17px;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  row-gap: 1rem;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.user button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 2rem;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.user svg {
+  width: 2.2rem;
+  height: 2.2rem;
+}
+
+.filters {
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 1.5rem 0;
+  row-gap: 0.7rem;
+}
+
+.filters input {
+  font-size: 22px;
+  background-color: #85dffb;
+}
+
+.selects {
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 3.5rem 0;
+  row-gap: 0.7rem;
+}
+
+.selects select::-ms-expand {
+  -webkit-appearance: none;
+}
+
+footer {
+  margin-top: auto;
+  text-align: center;
+  font-weight: 400;
+}
+
+.copyright {
+  font-size: 1.2rem;
+  color: var(--color-light--1);
+}

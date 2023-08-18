@@ -1,0 +1,57 @@
+.createVacation {
+}
+
+.createVacation section {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+  /* background-color: aqua; */
+}
+
+.createVacation h2 {
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  font-weight: 900;
+  background-color: var(--color-light--2);
+  text-align: center;
+  width: 100%;
+  /* padding: 0.2rem 0; */
+}
+
+.createVacation form {
+  flex-grow: 1;
+  width: 100%;
+  /* background-color: aquamarine; */
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+.createVacation form {
+  flex-grow: 1;
+  width: 100%;
+  /* background-color: aquamarine; */
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+.createVacation .submit {
+  background-color: var(--color-brand--2);
+  padding: 0.5rem;
+  border: none;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: var(--color-dark--1);
+  font-size: 1.1rem;
+  margin-top: 2rem;
+  border-radius: 2px;
+}
+
+.createVacation .submit:disabled {
+  opacity: 0.6;
+}

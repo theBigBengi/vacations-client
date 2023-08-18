@@ -1,0 +1,64 @@
+.login {
+  /* margin: 2.5rem;
+  padding: 2.5rem 5rem; */
+  background-color: rgba(0, 0, 0, 0.013);
+  min-height: calc(100vh - 5rem);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.login section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  /* Different from other form */
+  width: 48rem;
+  margin: 8rem auto;
+}
+
+/*   */
+.login section div p {
+  font-size: 1.4rem;
+  color: var(--color-dark--1);
+  font-weight: 300;
+}
+
+/*  Error message */
+.login form p {
+  font-size: 1.4rem;
+  color: red;
+  font-weight: 400;
+  text-align: center;
+}
+
+/*   */
+.login section div a {
+  color: blue;
+  font-weight: 500;
+}
+
+.form {
+  /* background-color: var(--color-dark--2); */
+  border: 1px solid rgb(214, 214, 214);
+  border-radius: 5px;
+  padding: 2rem 3rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  color: black;
+  background-color: var(--color-light--1);
+  /* Different from other form */
+
+  margin: 4rem auto;
+  /* box-shadow: 0 2px 1px 3px rgba(56, 56, 56, 0.05); */
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}

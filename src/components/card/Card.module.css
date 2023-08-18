@@ -1,0 +1,166 @@
+.card {
+  border: 1px solid rgb(230, 230, 230);
+  flex: 0 0 22%;
+  /* flex-wrap: wrap; */
+  flex-direction: column;
+  justify-content: flex-start;
+  /* row-gap: 10px; */
+  display: flex;
+  min-width: 300px;
+  width: 300px;
+  height: 520px;
+  font-size: 1.4rem;
+  border-radius: 10px;
+  box-shadow: 0 1px 2px 1px rgb(0, 0, 0, 0.1);
+  border: 1px solid rgb(195, 195, 195);
+}
+
+.card time {
+  padding: 0.5rem;
+  border: 1px solid var(--color-light--2);
+  font-size: 1.2rem;
+  background-color: var(--color-light--2);
+  border-top: 1px solid rgb(230, 230, 230);
+  border-bottom: 1px solid rgb(108, 108, 108);
+}
+
+.card p {
+  padding: 0 1.5rem;
+  overflow: hidden;
+  flex-grow: 1;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 11; /* Change this value to the number of lines you want to display */
+  line-clamp: 11; /* Support for newer browsers, optional */
+  word-break: break-all;
+  margin: 1.4rem 0;
+}
+
+.cardHeader {
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+  position: relative;
+}
+
+.admin {
+  height: 30%;
+  display: flex;
+  position: relative;
+}
+
+.cardHeader img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px 10px;
+}
+
+.imgOverlay {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.6) 0%,
+    rgba(254, 217, 113, 0.1) 85%
+  );
+}
+
+.actions {
+  display: flex;
+  z-index: 2;
+}
+
+.admin span {
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--color-dark--2);
+  margin: 0rem 0.8rem 0rem 0rem;
+  background-color: var(--color-light--2);
+  cursor: pointer;
+}
+
+.admin span:hover {
+  transform: scale(1.05);
+}
+
+.admin span:active {
+  transform: scale(0.99);
+}
+
+.card > div:last-child {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  /* background-color: antiquewhite; */
+  border-radius: 10px 10px;
+}
+
+/* "Buy Now" button */
+.card button {
+  margin: 1rem 1.5rem 1.5rem;
+  border-radius: 15px;
+  color: var(--color-dark--0);
+  font-weight: 700;
+  border: none;
+  border-radius: 0px;
+}
+
+/* Card Title */
+h4 {
+  color: white;
+  z-index: 2;
+  font-size: 1.8rem;
+}
+
+.actions button {
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  background-color: var(--color-light--2);
+  width: fit-content;
+  cursor: pointer;
+  /* border: 1px solid rgb(183, 183, 183); */
+  z-index: 2;
+  font-weight: 900;
+  transition: 0.3;
+}
+
+.actions button:hover {
+  transform: scale(1.02);
+}
+
+.actions button:active {
+  transform: scale(0.99);
+  background-color: var(--color-light--2);
+}
+
+.actions button span {
+  display: flex;
+  margin: 0 1rem 0 0;
+}
+
+svg {
+  width: 18px;
+  height: 18px;
+  color: inherit;
+}
